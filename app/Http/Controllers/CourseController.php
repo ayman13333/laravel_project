@@ -62,7 +62,7 @@ class CourseController extends Controller
             Session::forget('course_rar_name');
             $course_pic = $request->course_picture;
             $course_pic_name = time() . '.' . $course_pic->extension();
-            Storage::putFileAs('upload_courses', $course_pic,  $course_pic_name);
+            Storage::putFileAs('public/upload_courses', $course_pic,  $course_pic_name);
             Course::create([
                 'course_name' => $request->course_name,
                 "price_online" => $request->price_online,
@@ -143,7 +143,7 @@ class CourseController extends Controller
         $course=Course::find($id);
 
         $img_destination = 'storage/upload_courses/' . $course->course_picture;
-        $course_destination = 'upload_books/' . $course->course_rar;
+        $course_destination = 'storage/upload_courses/' . $course->course_rar;
         if (File::exists($img_destination)) {
             File::delete($img_destination);
         }
@@ -161,7 +161,7 @@ class CourseController extends Controller
         //upload course picture
         $course_rar_Name = time() . '.' . $course_rar->extension();
         //save course file to storage
-        Storage::putFileAs('upload_courses', $course_rar,  $course_rar_Name);
+        Storage::putFileAs('public/upload_courses', $course_rar,  $course_rar_Name);
         $request->session()->put('course_rar_name', $course_rar_Name);
     }
     // public function allcourses(){

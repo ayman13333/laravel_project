@@ -7,6 +7,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\PaymentCourseController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\CourseController;
@@ -71,6 +72,17 @@ Route::group([
  Route::get('/error',[PaymentController::class,'error']);
  //download book route
  Route::get('/user/books/download/{id}',[BookController::class,'download'])->name('book.download');
+
+  //buy course form
+  Route::get('/user/client/form/{id}/coursename/{bookname}',[PaymentCourseController::class,'buycourseform'])->name('buycourseform');
+  // paymentcourse route
+  Route::POST('/user/client/pay',[PaymentCourseController::class,'pay'])->name('course.pay');
+  //success course route
+ Route::get('/successCourse',[PaymentCourseController::class,'successCourse']);
+ //error course route
+ Route::get('/errorCourse',[PaymentCourseController::class,'errorCourse']);
+ //download course route
+ Route::get('/user/client/download/{id}',[ClientController::class,'downloadCourse'])->name('course.download');
 
 });
 

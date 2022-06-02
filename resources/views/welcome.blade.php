@@ -12,7 +12,7 @@
         .books .text-center{
             margin-top: 21px;
         }
-        }
+
         .courses .carousel-item {
             height: 600px;
         }
@@ -81,42 +81,32 @@
         <h2 style="margin-top: 30px ;margin-bottom: 30px; font-size: xxx-large; font-family: system-ui;">@lang('auth.books') </h2>
 
         <div class="books">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div id="books" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                    <button type="button" data-bs-target="#books" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#books" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                     <button type="button" data-bs-target="#books" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="{{ URL('images/books/book1.jpeg') }}" class="d-block w-100 " alt="...">
                     </div>
-                    {{-- <div class="carousel-item">
-              <img src="{{ URL('images/books/book2.jpeg')}}" class="d-block w-100 " alt="...">
-            </div> --}}
                     <div class="carousel-item">
                         <img src="{{ URL('images/books/book3.jpeg') }}" class="d-block w-100 " alt="...">
                     </div>
                     <div class="carousel-item">
                         <img src="{{ URL('images/books/book4.jpeg') }}" class="d-block w-100 " alt="...">
                     </div>
-                    {{-- <div class="carousel-item">
-              <img src="{{ URL('images/moving/moving12.jpeg')}}" class="d-block w-100 " alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="{{ URL('images/moving/moving15.jpeg')}}" class="d-block w-100 " alt="...">
-            </div> --}}
-
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-prev" type="button" data-bs-target="#books"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-next" type="button" data-bs-target="#books"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
@@ -125,53 +115,34 @@
             <div class="text-center">
                 <a href="{{route('users.books')}} "   class="btn btn-success"> @lang('auth.buy_book') <i class="fas fa-shopping-cart"></i></a>
             </div>
-
-
         </div>
         <h2 style="margin-top: 30px ;margin-bottom: 30px; font-size: xxx-large; font-family: system-ui;">@lang('auth.courses') </h2>
         <div class="courses">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div id="courses" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                    <button type="button" data-bs-target="#courses" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#courses" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#courses" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                        aria-label="Slide 6"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="{{ URL('images/courses/course1.jpeg') }}" class="d-block w-100 " alt="...">
                     </div>
-                    {{-- <div class="carousel-item">
-              <img src="{{ URL('images/books/book2.jpeg')}}" class="d-block w-100 " alt="...">
-            </div> --}}
                     <div class="carousel-item">
                         <img src="{{ URL('images/courses/course2.jpeg') }}" class="d-block w-100 " alt="...">
                     </div>
                     <div class="carousel-item">
                         <img src="{{ URL('images/courses/course3.jpeg') }}" class="d-block w-100 " alt="...">
                     </div>
-                    {{-- <div class="carousel-item">
-              <img src="{{ URL('images/courses/course4.jpeg')}}" class="d-block w-100 " alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="{{ URL('images/courses/course5.jpeg')}}" class="d-block w-100 " alt="...">
-            </div>
-
-                </div> --}}
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-prev" type="button" data-bs-target="#courses"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-next" type="button" data-bs-target="#courses"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>

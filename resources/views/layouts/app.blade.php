@@ -121,7 +121,7 @@
                                             <strong>Books Admin page</strong>
                                         </a>
                                         <a class="dropdown-item" href="{{ route('clients.index') }}">
-                                            <strong>Book Clients Admin page</strong>
+                                            <strong>All Clients Admin page</strong>
                                         </a>
                                         {{-- for session page --}}
                                         {{-- <a class="dropdown-item" href="{{route('sessions.index')}}">

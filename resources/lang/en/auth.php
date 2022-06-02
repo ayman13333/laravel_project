@@ -132,6 +132,7 @@ return [
     'v28'=>'Interactive Tafseer Quraan 28th chapter by Amr Ali ',
     'v29'=>'Interactive Tafseer Quraan 29th chapter by Amr Ali ',
     'v30'=>'Interactive Tafseer Quraan 30th chapter by Amr Ali',
-
+     //for courses success page
+     'Back to courses page'=>'Back to courses page'
 
 ];

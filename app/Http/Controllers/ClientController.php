@@ -134,4 +134,12 @@ class ClientController extends Controller
         return view('courses.coursesusers',compact('courses'));
     }
 
+     //for download course
+     public function downloadCourse($id){
+        // download course
+        $course=Course::findOrFail($id);
+        $filepath = public_path('storage/upload_courses/'.$course->course_rar);
+         return Response()->download($filepath);
+    }
+
 }

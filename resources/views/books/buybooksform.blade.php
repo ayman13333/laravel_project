@@ -42,7 +42,7 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1" style="font-size: x-large">@lang('auth.Address')</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" name="address">
+                    <input type="text" class="form-control" id="exampleInputPassword1" name="address">
                 </div>
                     <button type="submit" class="btn btn-success"  style="margin-top: 10px"> @lang( 'auth.submit_download')<i
                             class="fas fa-shopping-cart"></i></button>
@@ -80,7 +80,7 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1" style="font-size: x-large">@lang('auth.Address')</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" name="address">
+                    <input type="text" class="form-control" id="exampleInputPassword1" name="address">
                 </div>
                 <div class="alert alert-warning" role="alert" style="margin-top: 10px">
                    @lang('auth.Address_alert')
